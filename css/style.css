@@ -3,6 +3,8 @@
         src:    url('https://nomail.com.ua/files/eot/8f7cf9728216e49441c5bf902e3d151e.eot?#iefix') format('embedded-opentype'),
                 url('https://nomail.com.ua/files/woff/8f7cf9728216e49441c5bf902e3d151e.woff') format('woff'),
                 url('https://nomail.com.ua/files/woff2/8f7cf9728216e49441c5bf902e3d151e.woff2') format('woff2');
+
+
 }
 
 * {
@@ -78,6 +80,14 @@ ul {
     display: flex;
     justify-content: space-between;
     padding-top: 72px;
+}
+
+.menu-list-item {
+    display: inline-block;
+}
+
+.menu-list-item + .menu-list-item {
+    margin-left: 52px;
 }
 
 .header-title {
@@ -259,4 +269,314 @@ ul {
 
 .hotel-gallery a {
     margin-top: 50px;
+}
+
+.price-inner {
+    display: flex;
+}
+
+.price-on-title,
+.price-off-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.price-on {
+    margin-right: 70px;
+    width: 530px;
+}
+
+.price-list-item {
+    margin-bottom: 20px;
+}
+
+.price {
+    background-image: url(/images/Group\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center right 10%;
+}
+
+.contacts-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contacts-date,
+.contacts-price {
+    font-family: 'BalqisCyrillic-Script'; 
+    color: #E2AB3F;
+    font-size: 96px;
+    line-height: 100px;
+    font-weight: 300;
+}
+
+.contacts-price {
+    margin-left: 120px;
+}
+
+.contacts-date {
+    margin-bottom: 20px;
+}
+
+.contacts-date span,
+.contacts-price span {
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    font-style: italic;
+    margin-top: -10px;
+    margin-left: 205px;
+}
+
+.contacts-form {
+    max-width: 383px;
+    margin: 0 auto;
+}
+
+.contacts-form-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contacts-form-input {
+    border: 1px solid #E2AB3F;
+    display: block;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    padding: 0 31px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contacts-form-input::placeholder {
+    color: #E2AB3F;
+}
+
+.contacts-form-input:focus {
+    border: 1px solid black;
+}
+
+.contacts-form-btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    border: 1px solid #E2AB3F;
+    background-color: transparent;
+    padding: 11px 45px;
+    cursor: pointer;
+}
+
+.footer {
+    background-image: url(/images/footer.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 96px;
+    background-size: cover;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: 'BalqisCyrillic-Script'; 
+    color: black;
+    font-size: 86px;
+    line-height: 115px;
+}
+
+.footer-contacts {
+    width: 356px;
+    height: 527px;
+    background-image: url(/images/big-boll.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-contacts-title {
+    font-family: 'BalqisCyrillic-Script'; 
+    color: #E2AB3F;
+    font-size: 86px;
+    line-height: 115px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer-phone,
+.footer-email {
+    display: inline-block;
+    padding-left: 40px;
+    position: relative;
+    top: -40px;
+}
+
+.footer-phone::before,
+.footer-email::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -5px;
+}
+
+.footer-phone::before {
+    background-image: url(/images/phone.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-email::before {
+    background-image: url(/images/email.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-phone {
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    margin-top: 38px;
+}
+
+.footer-social a {
+    margin: 0 7px;
+}
+
+@media (max-width: 1240px) {
+    .header-title {
+        padding-top: 120px;
+        font-size: 180px;
+        line-height: 220px;
+    }
+    .header-span {
+        font-size: 50px;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-section {
+        margin: 100px 0;
+    }
+    .fairy-tail-container,
+    .our-trip-container {
+        position: static;
+    }
+    .fairy-tail-slider {
+        width: 100%;
+    }
+    .fairy-tail-body {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .header-title {
+        padding-top: 100px;
+        font-size: 120px;
+        line-height: 150px;
+    }
+    .header-span {
+        font-size: 30px;
+        margin-top: -44px;
+    }
+    .header-top {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .phone::before {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+    }
+    .menu-list-item + .menu-list-item {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-top {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 25px;
+    }
+    .header-title {
+        font-size: 80px;
+        line-height: 120px;
+    }
+    .header-span {
+        font-size: 22px;
+        margin-top: -46px;
+        margin-right: 15px;
+    }
+    .menu-list-item + .menu-list-item {
+        margin-left: 40px;
+    }
+    .fairy-tail-item img{
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .page-section {
+        margin: 50px 0;
+    }
+    .title {
+        margin-bottom: 25px;
+        line-height: 110px;
+        font-size: 60px;
+    }
+    .fairy-tail-title span {
+        margin-left: 120px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 370px) {
+    .header-title {
+        font-size: 60px;
+        line-height: 100px;
+    }
+    .header-span {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .menu-list-item + .menu-list-item {
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .fairy-tail-title span {
+        margin-left: 50px;
+    }
 }
